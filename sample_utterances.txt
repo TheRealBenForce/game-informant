@@ -1,0 +1,4 @@
+GetReleases What games are coming out this month
+GetReleases What games are coming out on {Platform}
+GetReleases What games are coming out for {Platform}
+GetReleases What {Platform} games are coming out

@@ -1,0 +1,22 @@
+{
+    "intents": [
+        {
+            "intent": "GetReleases",
+            "slots": [
+                {
+                    "name": "Platforms",
+                    "type": "LIST_OF_PLATFORM"
+                }
+            ]
+        },
+        {
+            "intent": "AMAZON.HelpIntent"
+        },
+        {
+            "intent": "AMAZON.StopIntent"
+        },
+        {
+            "intent": "AMAZON.CancelIntent"
+        }
+    ]
+}
