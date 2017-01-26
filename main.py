@@ -6,18 +6,8 @@ import os # Needed for AWS Lambda function environment variable
 
 baseurl = 'http://www.giantbomb.com/api/'
 api_key = os.environ['api_key']
+api_key = '8f265801cbb0a6dbf987730c6b252cd7484c0636'
 time = datetime.datetime.now()
-
-field = ['', / ## 00
-         '', / ## 00
-         '', / ## 00
-         '', / ## 00
-         '', / ## 00
-         '', / ## 00
-
-
-]  
-filt = 
 
 def lambda_handler(event, context):
     if (event["session"]["application"]["applicationId"] !=
@@ -102,30 +92,22 @@ def build_response(session_attributes, speechlet_response):
     }
     
     #########
-field = ['expected_release_quarter',   ## 00
-'expected_release_year', /     ## 00
-        'expected_release_month', /    ## 00
-        'expected_release_day', /      ## 00
-        'name', /                      ## 00
-        'platforms', /                 ## 00
+
+# Might be able to use this some day.
+field = [
+    'expected_release_day',      ## 01
+    'expected_release_month',    ## 02
+    'expected_release_year',     ## 03
+    'expected_release_quarter',  ## 04
+    'name',                      ## 05
+    'platforms',                 ## 06
     ]
-
-field = ['', / ## 00
-         '', / ## 00
-         '', / ## 00
-         '', / ## 00
-         '', / ## 00
-         '', / ## 00
-         
-
-] 
 
 def current_month_releases(platform=''):
     session_attributes = {}
     card_title = "Current Month Releases"
     reprompt_text = ""
     should_end_session = False
-
     month = time.month
     url = baseurl + 'games/?api_key=' + api_key + '&format=json' + '&filter=expected_release_month:' + str(month) + '&field_list=expected_release_quarter,expected_release_month,expected_release_day,expected_release_year,name,platforms'
     response = urllib2.urlopen(url)
