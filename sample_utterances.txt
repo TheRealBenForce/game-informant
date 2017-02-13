@@ -1,4 +1,6 @@
-GetReleases What games are coming out this month
-GetReleases What games are coming out on {Platform}
-GetReleases What games are coming out for {Platform}
-GetReleases What {Platform} games are coming out
+GetPlatformReleases What games are coming out on {Platform} {Date}
+GetPlatformReleases What games are coming out for {Platform} {Date}
+GetPlatformReleases What {Platform} games are coming out {Date}
+GetPlatformReleases What {Platform} games came out {Date}
+GetPlatformReleases Did any {Platform} games come out {Date}
+GetPlatformReleases Are there any {Platform} games coming out {Date}

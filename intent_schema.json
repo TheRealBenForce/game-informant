@@ -1,14 +1,21 @@
 {
     "intents": [
         {
-            "intent": "GetReleases",
+            "intent": "GetPlatformReleases",
             "slots": [
                 {
-                    "name": "Platforms",
-                    "type": "LIST_OF_PLATFORM"
-                }
+                    "name": "Platform",
+                    "type": "LIST_OF_PLATFORMS"
+                },
+                {
+                    "name": "Date",
+                    "type": "AMAZON.DATE"
+                }                
             ]
         },
+        {
+            "intent": "GetReleases"
+        },        
         {
             "intent": "AMAZON.HelpIntent"
         },
